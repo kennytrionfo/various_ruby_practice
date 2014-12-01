@@ -1,12 +1,38 @@
 
-#Tasks that couldn't make it in tick tick cuz it was down
-# buffer post = Always, always, always build just what you need, and only when you need it.
-# buffer - http://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it
-# - buffer - http://en.wikipedia.org/wiki/Extreme_programming
+
+#----- PUT ON TIMER!
+
+#---------------- .collect & lambda -------------Kenny Trionfo---12/1/2014--------
+# 1.create a hash of strings.
+# 2.capitalize each of them by using .collect and an do/end block that capitalizes each one. 
+# 3.Now do above but using .collect and pass it the collect lambda. 
+# 	Answer: 
+
+# >> ['a', 'b', 'c'].collect{|letter| letter.capitalize}
+# => ["A", "B", "C"]
+# But it looks so much nicer this way:
+
+# >> ['a', 'b', 'c'].collect(&:capitalize)
+# => ["A", "B", "C"]
 
 
+#---------------- RANGE -------------Kenny Trionfo---11/26/2014--------
+#Convert the alphabet range into an array and print each one. 
+#Answer:
 
- 
+# ('A'..'Z').to_a.each { |letter| print letter }
+
+
+#----------------RICE ON SQUARES -------------Kenny Trionfo---11/26/2014--------
+#Create a method that starts by putting one grain of rice on a checkerboard square and then doubles it up to 64.
+# Answer: 
+
+# rice_on_square = 1
+# 64.times do |square|
+#  puts "On square #{square + 1} are #{rice_on_square} grain(s)"
+#  rice_on_square *= 2
+# end
+
 
 #----------------  -------------Kenny Trionfo---11/24/2014--------
 #.5-Create an array of strings called strintgs that we'd like to later use as hash keys, but we'd rather they be symbols.
