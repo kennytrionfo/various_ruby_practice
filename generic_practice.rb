@@ -2,6 +2,66 @@
 
 #----- PUT ON TIMER!
 
+#---------------- blocks -------------Kenny Trionfo---12/1/2014--------
+# blocks aren't _________. And they don't all the powers and abilities of an _________ and so therefor can't be saved as a ____________.
+# 	Answer:
+
+# ojects. object. variables.
+
+
+#---------------- yield -------------Kenny Trionfo---12/1/2014--------
+# 1-write a method that puts something yields to a block outside of it and then puts something else. 
+# 	Answer: 
+
+# def block_test
+#   puts "We're in the method!"
+#   puts "Yielding to the block..."
+#   yield
+#   puts "We're back in the method!"
+# end
+
+# block_test { puts ">>> We're in the block!" }
+
+# 2-now say that you want to execute a block of code that is outside of a method that you want to run. Use yield that takes a param inside of a method. 
+# 	Answer:
+
+# def yield_with_param(word)
+# 	puts "before yield"
+# 	yield(word)
+# 	puts "after yield"
+# end
+# yield_with_param("shalasium") { |x| puts "#{x} is my word."}
+
+
+#---------------- LAMBDAS -------------Kenny Trionfo---12/1/2014--------
+# What is the difference between a proc and a lambda?
+# 	Answer: 
+
+# a lambda checks the number of arguments passed to it, while a proc does not. This means that a lambda will throw an error if you pass it the wrong number of arguments, whereas a proc will ignore unexpected arguments and assign nil to any that are missing.
+
+# Second, when a lambda returns, it passes control back to the calling method; when a proc returns, it does so immediately, without going back to the calling method.
+
+
+#---------------- Lambda proc puts -------------Kenny Trionfo---12/1/2014--------
+#   why do we have to use "puts" here to call these methods and not just call them with their name? ?
+# def batman_ironman_proc
+#   victor = Proc.new { return "Batman will win!" }
+#   victor.call
+#   "Iron Man will win!"
+# end
+
+# puts batman_ironman_proc
+
+
+# def batman_ironman_lambda
+#   victor = lambda { return "Batman will win!" }
+#   victor.call
+#   "Iron Man will win!"
+# end
+
+# puts batman_ironman_lambda
+
+
 #---------------- .collect & lambda -------------Kenny Trionfo---12/1/2014--------
 # 1.create a hash of strings.
 # 2.capitalize each of them by using .collect and an do/end block that capitalizes each one. 
